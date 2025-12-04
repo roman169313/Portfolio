@@ -9,7 +9,7 @@ const About = () => {
   ];
 
   return (
-    <section className="h-full overflow-y-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-8 sm:py-12 px-4 pb-48 md:pb-20">
+    <section className="h-full overflow-y-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-8 sm:py-12 px-4 pb-64 md:pb-20">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-white">
           About Me

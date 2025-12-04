@@ -101,7 +101,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="h-full overflow-y-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-8 sm:py-12 px-4 pb-48 md:pb-20">
+    <section id="contact" className="h-full overflow-y-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-8 sm:py-12 px-4 pb-64 md:pb-20">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-3 sm:mb-4 text-center">
           Get In Touch
