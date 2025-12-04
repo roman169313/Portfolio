@@ -24,6 +24,13 @@ html {
   scroll-behavior: smooth;
   /* Mobile Smooth Scrolling */
   -webkit-overflow-scrolling: touch;
+  /* Enhanced smooth scrolling for all transitions */
+  scroll-padding-top: 4rem;
+}
+
+/* Smooth scrolling for all scrollable elements */
+* {
+  scroll-behavior: smooth;
 }
 
 /* Mobile Touch Optimization */

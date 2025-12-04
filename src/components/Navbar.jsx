@@ -24,7 +24,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
         <div className="flex justify-between items-center h-14 sm:h-16">
           <button
             onClick={() => setActiveSection('home')}
-            className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent hover:scale-105 active:scale-95 transition-transform"
+            className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-white hover:scale-105 active:scale-95 transition-transform"
           >
             <span className="hidden sm:inline">Roman Ahmad</span>
             <span className="sm:hidden">RA</span>

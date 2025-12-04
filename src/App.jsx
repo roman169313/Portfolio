@@ -26,12 +26,18 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
       
-      {/* Full Screen Section Container with proper scroll */}
+      {/* Full Screen Section Container with smooth transitions */}
       <div className="pt-16 h-screen w-full overflow-hidden">
-        <div key={activeSection} className="h-full w-full animate-fade-in">
+        <div 
+          key={activeSection} 
+          className="h-full w-full animate-fade-in transition-all duration-500 ease-in-out"
+        >
           {sections[activeSection]}
         </div>
       </div>
+
+      {/* Mobile Navigation - Previous/Next/Home Buttons */}
+      <MobileNav activeSection={activeSection} setActiveSection={setActiveSection} />
 
       {/* Footer - Mobile Optimized */}
       <div className="fixed bottom-0 left-0 right-0 bg-gray-900/90 backdrop-blur-sm text-gray-400 py-2 sm:py-3 text-center text-xs sm:text-sm z-10 border-t border-gray-800">

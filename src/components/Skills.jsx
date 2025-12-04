@@ -53,9 +53,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="h-full overflow-y-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-8 sm:py-12 px-4 pb-20">
+    <section id="skills" className="h-full overflow-y-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-8 sm:py-12 px-4 pb-48 md:pb-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-3 sm:mb-4 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-3 sm:mb-4 text-center">
           Technical Skills
         </h2>
         <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto text-center mb-8 sm:mb-12 md:mb-16 px-4">
@@ -63,14 +63,14 @@ const Skills = () => {
         </p>
       
         {/* Skill Categories */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {skillCategories.map((category, index) => (
-            <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-              <div className="text-center mb-6">
-                <div className="text-5xl mb-3">{category.icon}</div>
-                <h3 className="text-xl font-bold text-gray-200">{category.title}</h3>
+            <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-700 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+              <div className="text-center mb-4 sm:mb-6">
+                <div className="text-4xl sm:text-5xl mb-2 sm:mb-3">{category.icon}</div>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-200">{category.title}</h3>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {category.skills.map((skill, idx) => (
                   <div key={idx}>
                     <div className="flex justify-between mb-2">
@@ -90,19 +90,19 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Tools & Technologies */}
-        <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-purple-500/50 transition-all duration-300">
-          <h3 className="text-2xl font-bold text-gray-200 mb-6 text-center">
+        {/* Tools & Technologies - Mobile Optimized */}
+        <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-700 hover:border-purple-500/50 transition-all duration-300">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-200 mb-4 sm:mb-6 text-center">
             Tools & Technologies
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {tools.map((tool, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border border-gray-700 hover:border-blue-500/50 hover:shadow-md hover:shadow-blue-500/20 transform hover:scale-105 transition-all duration-300"
+                className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-3 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg border border-gray-700 hover:border-blue-500/50 hover:shadow-md hover:shadow-blue-500/20 transform hover:scale-105 transition-all duration-300"
               >
-                <span className="text-2xl">{tool.icon}</span>
-                <span className="font-medium text-gray-300">{tool.name}</span>
+                <span className="text-xl sm:text-2xl flex-shrink-0">{tool.icon}</span>
+                <span className="font-medium text-gray-300 text-xs sm:text-sm truncate">{tool.name}</span>
               </div>
             ))}
           </div>

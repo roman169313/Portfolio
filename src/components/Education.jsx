@@ -34,9 +34,9 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="h-full overflow-y-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-12 px-4 pb-20">
+    <section id="education" className="h-full overflow-y-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-12 px-4 pb-48 md:pb-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-4 text-center">
+        <h2 className="text-5xl font-bold text-white bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-4 text-center">
           Education & Achievements
         </h2>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-16">
